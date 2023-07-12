@@ -1,6 +1,5 @@
 * {
 	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -57,11 +56,30 @@ section h1 {
 }
 
 .explain {
-	text-align: center;
+	text-align: left;
 	margin: auto 10px;
 	width: auto;
 	font-size: 1.5rem;
 	line-height: 2;
+}
+
+.item {
+	width: fit-content;
+	padding: 0 3%;
+	margin-top: 5%;
+	border-bottom: solid 4px white;
+	font-size: 2rem;
+}
+
+.element {
+	margin-top: 5%;
+	list-style: none;
+	font-size: 1.6rem;
+}
+
+.hoby {
+	list-style: disc;
+	margin-left: 5%;
 }
 
 .button {
@@ -104,6 +122,19 @@ section h1 {
 .fadeOut {
 }
 
+#github {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	height: auto;
+}
+
+#github img {
+	width: 5vw;
+	height: auto;
+	margin: 30%;
+}
+
 @keyframes slideIn {
 	0% {
 		transform: translateX(120%);
@@ -116,7 +147,7 @@ section h1 {
 
 @media screen and (max-width: 768px) {
 	section h1 {
-		margin: 7%;
+		margin: 2%;
 		font-size: 1.5rem;
 	}
 
@@ -148,9 +179,28 @@ section h1 {
 		font-size: 1rem;
 	}
 
+	.item {
+		border-bottom: solid 2px white;
+		font-size: 1rem;
+	}
+
+	.element {
+		margin-top: 2%;
+		font-size: 0.8rem;
+	}
+
+	.hoby {
+		list-style: disc;
+	}
+
 	.fadeIn {
 		animation: slideIn backwards 0.7s ease 0.7s;
 		transform: translateY(0%);
+	}
+
+	#github img {
+		width: 15vw;
+		margin: 20px;
 	}
 
 	@keyframes slideIn {
